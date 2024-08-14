@@ -20,3 +20,30 @@
 .ip-text {
   margin-right: 10px;
 }
+.ip-textbox {
+  border-radius: 20px;
+  height: 20px;
+  width: 20%;
+  
+}
+@keyframes identifier {
+  0% {
+    background-color: white;
+    color: white;
+  }
+  50% {
+    background-color: #152F2A;
+    color: grey;
+  }
+  100% {
+    background-color: #013220;
+    color: silver;
+  }
+}
+
+.ip-textbox:hover, :focus {
+  animation-name: identifier;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
