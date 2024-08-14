@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react"
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>
+          IP Finder
+        </h1>
+        <h2>
+          The IP Finder finds the location of your or another&#39;s IP address
+        </h2>
       </header>
+      <div className="ip-finder">
+          <b className="ip-text">Enter the IP address:</b>
+          <code><input type="textbox" placeholder="Please enter your IP" className="" /></code>
+      </div>
     </div>
   );
 }
